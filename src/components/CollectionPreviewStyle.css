@@ -1,0 +1,9 @@
+.collection-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview {
+  display: flex;
+  justify-content: space-evenly;
+}
