@@ -9,7 +9,6 @@
 .content {
   width: 90%;
   height: 90%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,6 +40,5 @@
   #large {
     width: 130%;
     height: 350px;
-    border: 1px solid yellow;
   }
 }

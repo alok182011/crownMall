@@ -1,0 +1,30 @@
+.sign-in-col {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sign-in {
+  background-color: #ecf0f3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.sign-in-input-box {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 15px;
+  height: 35px;
+  background-color: #ecf0f3;
+  width: 358px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.sign-in-buttons {
+  display: flex;
+}

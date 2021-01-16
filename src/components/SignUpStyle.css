@@ -1,0 +1,26 @@
+.sign-up-col {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.sign-up {
+  background-color: #ecf0f3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.sign-up-input-box {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 18px;
+  height: 35px;
+  padding: 15px;
+  background-color: #ecf0f3;
+  width: 358px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}

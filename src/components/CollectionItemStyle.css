@@ -9,7 +9,6 @@
 .image {
   height: 300px;
   width: 300px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

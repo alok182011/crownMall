@@ -1,5 +1,5 @@
 import React from "react";
-import Directory from "../components/directory";
+import Directory from "../components/Directory";
 import "./homepagestyle.css";
 
 import { Container } from "react-bootstrap";
