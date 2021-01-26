@@ -39,3 +39,25 @@
   opacity: 0.9;
   box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
 }
+
+#dropdown-button {
+  background-color: black;
+  color: white;
+  width: 175px;
+  margin-top: auto;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+#dropdown-button:hover {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  opacity: 0.9;
+}

@@ -2,14 +2,18 @@ import React from "react";
 import { ReactComponent as Logo } from "../assets/crown.svg";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { auth } from "../firebase/firebaseUtil";
-import { connect } from 'react-redux';
-
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
 import "./HeaderStyle.css";
+import CartIcon from "./CartIcon";
+import CartDropdown from "./CartDropdown";
+import { selectCartHidden } from "../redux/cart/cart-selectors";
+import { selectCurrentUser } from "../redux/user/user-selectors";
 
-const Header = ({ currentUser }) => (
+const Header = ({ currentUser, hidden }) => (
   <Navbar collapseOnSelect sticky="top" expand="lg" bg="dark" variant="dark">
-    <Container>
+    <Container className="header">
       <Navbar.Brand href="/">
         <Logo />
       </Navbar.Brand>
@@ -22,7 +26,9 @@ const Header = ({ currentUser }) => (
           </Nav.Link>
           {currentUser ? (
             <div className="d-flex">
-              <Nav.Link active>Hi! {currentUser.currentUser.displayName}</Nav.Link>
+              <Nav.Link active>
+                Hi! {currentUser.currentUser.displayName}
+              </Nav.Link>
               <Nav.Link onClick={() => auth.signOut()}>SIGN OUT</Nav.Link>
             </div>
           ) : (
@@ -32,13 +38,17 @@ const Header = ({ currentUser }) => (
       </Navbar.Collapse>
     </Container>
     <Nav className="ml-auto mr-auto">
-      <Nav.Link href="#">{0} CART</Nav.Link>
+      <Nav.Link href="#">
+        <CartIcon />
+      </Nav.Link>
     </Nav>
+    {hidden ? null : <CartDropdown />}
   </Navbar>
 );
 
-const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser
-})
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+  hidden: selectCartHidden,
+});
 
 export default connect(mapStateToProps)(Header);

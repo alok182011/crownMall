@@ -8,7 +8,7 @@ import "./SignInSignUpPageStyle.css";
 import { Container, Row } from "react-bootstrap";
 
 const SignInSignUpPage = () => (
-  <Container fluid>
+  <Container className="signin-signup" fluid>
     <Row>
       <SignIn />
       <SignUp />
