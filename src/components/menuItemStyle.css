@@ -20,7 +20,7 @@
 .info {
   background-color: white;
   opacity: 0.7;
-  width: 200px;
+  width: 240px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -29,8 +29,8 @@
 }
 
 .info:hover {
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
   transition-duration: 0.4s;
   cursor: pointer;
   opacity: 0.9;
