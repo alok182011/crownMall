@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 
 const Homepage = () => (
   <Container className="homepage" fluid>
-    <Directory  />
+    <Directory />
   </Container>
 );
 
