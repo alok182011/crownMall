@@ -21,7 +21,7 @@ const Header = ({ currentUser, hidden }) => (
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Link href="/shop">SHOP</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
+          <Nav.Link eventKey={2} href="/contact">
             CONTACT
           </Nav.Link>
           {currentUser ? (

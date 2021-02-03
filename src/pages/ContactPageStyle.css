@@ -1,0 +1,10 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 80vmin;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 30px;
+}

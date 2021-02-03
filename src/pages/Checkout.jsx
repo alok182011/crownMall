@@ -6,7 +6,6 @@ import CheckoutItem from "../components/CheckoutItem";
 
 import "./CheckoutStyle.css";
 import { Container } from "react-bootstrap";
-import { toggleCartHidden } from "../redux/cart/cart-actions";
 
 const CheckoutPage = ({ cartItems, total }) => (
   <Container fluid>
